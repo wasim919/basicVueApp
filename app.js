@@ -25,8 +25,17 @@ new Vue({
 
       this.monsterAttacks();
     },
-    heal: function () {},
-    giveUp: function () {},
+    heal: function () {
+      if (this.playerHealth <= 90) {
+        this.playerHealth += 10;
+      } else {
+        this.playerHealth = 100;
+      }
+      this.monsterAttacks();
+    },
+    giveUp: function () {
+      this.gameIsRunning = false;
+    },
     getDamage: function (min, max) {
       return Math.max(Math.floor(Math.random() * max) + 1, min);
     },

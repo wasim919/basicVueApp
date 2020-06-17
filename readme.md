@@ -6,4 +6,4 @@
 
 ## Running the app
 
-> Clone the project and run index.html in your broweser.
+> Clone the project and run index.html in your browser.
